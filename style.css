@@ -124,12 +124,25 @@ html,body{
     animation-fill-mode: both;
     opacity: 0;
 }
-#center-nav>a{
+a{
     cursor: pointer;
     position: relative;
 }
-#nav li,a:after,
-#nav li,a:before {
+a:hover{
+    color: #96FFCA;
+}
+a:after{
+    content:'';
+    position: absolute;
+    left: 0%;
+    width: 0%;
+    height: 3px;
+    bottom: -7px;
+    background-color: #96FFCA;
+   transition: 0.3s;
+}
+.menu5 a:after,
+.menu5 a:before {
   content: "";
   position: absolute;
   width: 0%;
@@ -140,30 +153,29 @@ html,body{
   transition: all 300ms ease-in;
 }
 
-#nav li,a:after {
-  top: 126%;
+.menu5 a:after {
+  top: 122%;
   left: 0;
 }
 
-#nav li,a:before {
+.menu5 a:before {
   top: 25%;
   right: 0;
 }
 
-#nav li,a:hover::after {
+.menu5 a:hover::after {
   width: 100%;
   height: 1px;
   bottom: 25%;
   background-color: #fff;
 }
-#nav li,a:hover::before {
+.menu5 a:hover::before {
   width: 100%;
   height: 1px;
   top: 25%;
   background-color: #fff;
 }
 #menuToggle{
-  
     display: none;
 }
 
