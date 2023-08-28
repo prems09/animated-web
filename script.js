@@ -59,7 +59,7 @@ main2.addEventListener("mousemove",function(dets2) {
   console.log(dets2);
   
 });
-const menuToggle = document.getElementById('menuToggle');
+const menuToggle = document.getElementById('bar');
 const menuList = document.getElementById('menuList');
 
 if(window.innerWidth>820){
